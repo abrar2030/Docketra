@@ -7,6 +7,42 @@
     <title>Abrar Ahmed - Professional Portfolio</title>
     <style>
 
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            transition: transform 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+        
+        .footer-links li {
+            list-style-type: none;
+            margin-bottom: 8px;
+            color: #9ca3af;
+            font-size: 16px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .footer-links li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #4b5563;
+        }
+        
+        .footer-heading {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
         .skills {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
