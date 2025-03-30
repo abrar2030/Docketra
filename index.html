@@ -381,6 +381,63 @@
         .view-project:hover::after {
             transform: translateX(5px);
         }
+
+        /* Certifications Section */
+        .certifications {
+            padding: 100px 0;
+            background-color: white;
+        }
+
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .certification-item {
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            border: 1px solid #e5e7eb;
+        }
+
+        .certification-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .certification-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #111;
+            margin-bottom: 8px;
+        }
+
+        .certification-date {
+            color: #6b7280;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .certification-link {
+            display: inline-flex;
+            align-items: center;
+            color: #2563eb;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .certification-link::after {
+            content: "→";
+            margin-left: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .certification-link:hover::after {
+            transform: translateX(5px);
+        }
         
         /* Contact Section */
         .contact {
@@ -530,7 +587,7 @@
         
         .footer-content {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-template-columns: 2fr 1fr 1fr;
             gap: 40px;
             margin-bottom: 40px;
         }
@@ -598,6 +655,10 @@
             .footer-content {
                 grid-template-columns: 1fr 1fr;
             }
+
+            .certifications-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
         
         @media (max-width: 768px) {
@@ -640,6 +701,10 @@
             .hamburger {
                 display: block;
             }
+
+            .certifications-grid {
+                grid-template-columns: 1fr;
+            }
         }
         
         @media (max-width: 576px) {
@@ -661,6 +726,7 @@
                         <li><a href="#home" class="active">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -863,6 +929,77 @@
     </div>
 </section>
 
+<!-- Certifications Section -->
+<section class="certifications" id="certifications">
+    <div class="container">
+        <div class="portfolio-heading">
+            <h2 class="section-title">Certifications</h2>
+            <p>Professional credentials validating technical expertise</p>
+        </div>
+        <div class="certifications-grid">
+            <div class="certification-item">
+                <h3 class="certification-title">SQL (Advanced) - HackerRank</h3>
+                <div class="certification-date">Nov 13, 2024</div>
+                <a href="https://www.credly.com/badges/638bf94d-f099-4173-b62b-be91bb814092" 
+                   target="_blank" 
+                   class="certification-link">
+                    View Credential
+                </a>
+            </div>
+
+            <div class="certification-item">
+                <h3 class="certification-title">Software Engineer - HackerRank</h3>
+                <div class="certification-date">Nov 19, 2024</div>
+                <a href="https://www.hackerrank.com/certificates/iframe/407808ada668" 
+                   target="_blank" 
+                   class="certification-link">
+                    View Credential
+                </a>
+            </div>
+
+            <div class="certification-item">
+                <h3 class="certification-title">DevOps in Google Cloud</h3>
+                <div class="certification-date">Jan 09, 2025</div>
+                <a href="https://www.cloudskillsboost.google/public_profiles/1601f1ee-b805-48be-a523-753d139f53cf/badges/13533180" 
+                   target="_blank" 
+                   class="certification-link">
+                    View Credential
+                </a>
+            </div>
+
+            <div class="certification-item">
+                <h3 class="certification-title">Terraform in Google Cloud</h3>
+                <div class="certification-date">Jan 08, 2025</div>
+                <a href="https://www.credly.com/badges/af1f1708-6284-438e-a618-d1b05e7ca3df" 
+                   target="_blank" 
+                   class="certification-link">
+                    View Credential
+                </a>
+            </div>
+
+            <div class="certification-item">
+                <h3 class="certification-title">Kubernetes in Google Cloud</h3>
+                <div class="certification-date">Jan 10, 2025</div>
+                <a href="https://www.credly.com/badges/638bf94d-f099-4173-b62b-be91bb814092" 
+                   target="_blank" 
+                   class="certification-link">
+                    View Credential
+                </a>
+            </div>
+
+            <div class="certification-item">
+                <h3 class="certification-title">AWS Well-Architected Proficient</h3>
+                <div class="certification-date">Jan 02, 2025</div>
+                <a href="https://www.credly.com/badges/7be07071-23b7-4916-a8a7-51fbdd071ae2" 
+                   target="_blank" 
+                   class="certification-link">
+                    View Credential
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Contact Section -->
 <section class="contact" id="contact">
     <div class="container">
@@ -970,18 +1107,8 @@
                     <li><a href="#home" class="footer-link">Home</a></li>
                     <li><a href="#about" class="footer-link">About</a></li>
                     <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+                    <li><a href="#certifications" class="footer-link">Certifications</a></li>
                     <li><a href="#contact" class="footer-link">Contact</a></li>
-                </ul>
-            </div>
-
-            <!-- Right Column - Certifications -->
-            <div class="footer-column">
-                <h3 class="footer-heading">Certifications</h3>
-                <ul class="footer-links">
-                    <li>SQL (Advanced) - HackerRank</li>
-                    <li>BCSS Cloud Fundamental Level – Ericsson</li>
-                    <li>Principles of IBM Cloud – IBM</li>
-                    <li>Google Cloud Fundamentals</li>
                 </ul>
             </div>
         </div>
