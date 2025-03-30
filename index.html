@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrar Ahmed - Professional Portfolio</title>
     <style>
-
         .footer-link {
             color: #9ca3af;
             transition: color 0.3s ease;
@@ -383,100 +382,6 @@
             transform: translateX(5px);
         }
         
-        /* Resume Section */
-        .resume {
-            padding: 100px 0;
-            background-color: white;
-        }
-        
-        .resume-heading {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 2px;
-            background-color: #e5e7eb;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -1px;
-        }
-        
-        .timeline-item {
-            padding: 10px 40px;
-            position: relative;
-            width: 50%;
-            box-sizing: border-box;
-        }
-        
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background-color: white;
-            border: 4px solid #2563eb;
-            border-radius: 50%;
-            top: 15px;
-            z-index: 1;
-        }
-        
-        .left {
-            left: 0;
-            text-align: right;
-        }
-        
-        .right {
-            left: 50%;
-        }
-        
-        .left::after {
-            right: -14px;
-        }
-        
-        .right::after {
-            left: -14px;
-        }
-        
-        .timeline-content {
-            padding: 20px;
-            background-color: #f9fafb;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-        }
-        
-        .timeline-date {
-            color: #6b7280;
-            font-size: 14px;
-            margin-bottom: 5px;
-        }
-        
-        .timeline-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-        
-        .timeline-subtitle {
-            color: #4b5563;
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-        
-        .timeline-description {
-            color: #4b5563;
-            font-size: 14px;
-        }
-        
         /* Contact Section */
         .contact {
             padding: 100px 0;
@@ -712,25 +617,6 @@
                 grid-template-columns: 1fr;
             }
             
-            .timeline::after {
-                left: 31px;
-            }
-            
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            
-            .left, .right {
-                left: 0;
-                text-align: left;
-            }
-            
-            .left::after, .right::after {
-                left: 18px;
-            }
-            
             nav ul {
                 display: none;
                 position: absolute;
@@ -775,7 +661,6 @@
                         <li><a href="#home" class="active">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#resume">Resume</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
@@ -880,7 +765,6 @@
                         <i class="devicon-git-plain colored"></i>
                     </div>
                 </div>
-                    <a href="Resume.pdf" download class="download-button" style="margin-top: 30px;">Download Resume</a>
                 </div>
                 
             <!-- Updated Image Container -->
@@ -978,47 +862,6 @@
         </div>
     </div>
 </section>
-    
-    <!-- Resume Section -->
-    <section class="resume" id="resume">
-        <div class="container">
-            <div class="resume-heading">
-                <h2 class="section-title">Experience & Education</h2>
-                <p>My professional journey and academic background.</p>
-            </div>
-            <div class="timeline">
-                <!-- Education -->
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Sep 2021 - Jan 2025</div>
-                        <h3 class="timeline-title">BSc Computer Science</h3>
-                        <div class="timeline-subtitle">Eötvös Loránd University</div>
-                        <p class="timeline-description">Coursework included Data Structures and Algorithms, Object-Oriented Programming, Concurrent Programming, Software Engineering, Software Testing, Databases, Operating Systems, Cloud Computing and DevOps, Distributed Systems, Cybersecurity and Network Protocols.</p>
-                    </div>
-                </div>
-                
-                <!-- Ericsson Experience -->
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Aug 2023 - Oct 2024</div>
-                        <h3 class="timeline-title">Software Developer</h3>
-                        <div class="timeline-subtitle">Ericsson</div>
-                        <p class="timeline-description">Developed and optimized cloud-based DevOps pipelines and infrastructure. Automated cloud deployments using Jenkins, GitHub Actions, and Spinnaker CI/CD pipelines. Streamlined workflows with Python and Bash scripting, managed infrastructure as code with Terraform, and utilized Docker and Kubernetes for containerization.</p>
-                    </div>
-                </div>
-                
-                <!-- Teaching Assistant Experience -->
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="timeline-date">Feb 2025 - Present</div>
-                        <h3 class="timeline-title">Teaching Assistant</h3>
-                        <div class="timeline-subtitle">Eötvös Loránd University</div>
-                        <p class="timeline-description">Supported students in Python, Operating Systems, and Algorithms & Data Structures. Conducted tutorials, reviewed assignments, and assisted instructors with course delivery.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 <!-- Contact Section -->
 <section class="contact" id="contact">
@@ -1127,7 +970,6 @@
                     <li><a href="#home" class="footer-link">Home</a></li>
                     <li><a href="#about" class="footer-link">About</a></li>
                     <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
-                    <li><a href="#resume" class="footer-link">Resume</a></li>
                     <li><a href="#contact" class="footer-link">Contact</a></li>
                 </ul>
             </div>
@@ -1150,3 +992,5 @@
         </div>
     </div>
 </footer>
+</body>
+</html>
